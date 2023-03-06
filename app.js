@@ -20,7 +20,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 createRoute(app)
 
-// error 错误处理
+// error 错误处理。
 app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.send({
