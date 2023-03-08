@@ -2,7 +2,7 @@ const axios = require('axios')
 
 let http = axios.create({
     baseURL: '',
-    timeout: 10000,
+    timeout: 100000,
 });
 
 // 请求拦截器
